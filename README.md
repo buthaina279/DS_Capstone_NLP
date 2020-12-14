@@ -20,7 +20,7 @@ Analyze how travelers expressed their feelings on Twitter in the last 7 days. In
    - Sentiment Analysis using TextBlob 
    - get the words for positive and negative sentiment just to understand the reason for the classification
   
-- Exploratory Data Analysis:
+- EDA (Exploratory Data Analysis):
   - EDA on the airline dataset
   - search for specific words to get some features about all the airlines 
   - visualize the features for the airlines
