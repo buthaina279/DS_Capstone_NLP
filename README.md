@@ -6,28 +6,36 @@
 
 # Objective:
 
-Analyze how travelers expressed their feelings on Twitter in the last 7 days. In addition, predict the airline name from some features that were extracted from the tweets.
+- Analyze the sentiment of tweets on eleven international airlines.
+
+- Extracting features that represent travelers feelings about the services that is provided by each airline.
+
+- Predicting the sentiment using the extracted features from the tweets and all the airlines.
 
 
-# In this repo there are four Jupyter notebooks:
+# In this repo there are five Jupyter notebooks:
 
-- Collect_munging:
+- Collect_clean:
     - In this notebook I collected the data set for 11 international airlines using twitter API which is offered the tweets for 7 days only.
     - remove duplicated rows
-    - NLP pre-processing
+    - NLP text pre-processing
     
 - Classification:
    - Sentiment Analysis using TextBlob 
    - get the words for positive and negative sentiment just to understand the reason for the classification
+   
+- Extract_features:
+  - Extract features from each tweet and create a column for each feature, this represented by 0 (did not find the feature) and 1 (found the feature).
+
   
 - EDA (Exploratory Data Analysis):
   - EDA on the airline dataset
   - search for specific words to get some features about all the airlines 
-  - visualize the features for the airlines
+  - visualize the features for the airlines with the sentiment
   
 - ML(Machine Learning):
-  - Extract features from each tweet and create a column for each feature, this represented by 0 (did not find the feature) and 1 (found the feature).
-  - preprocessing using OneHotEncoder
-  - Apply ML that handle both Multiclass classification and imbalanced dataset
-  - predictors are all features with likes of the tweets and sentiment
-  - traget is the airline
+  - preprocessing 
+   - traget is the sentiment
+  - Apply random forest and logistic regression 
+  - SMOTE to handle the imbalance in the dataset
+ 
